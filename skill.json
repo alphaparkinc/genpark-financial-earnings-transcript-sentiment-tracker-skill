@@ -1,0 +1,42 @@
+{
+  "name": "genpark-financial-earnings-transcript-sentiment-tracker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Financial earnings call transcript tone shift tracker extracting executive sentiment, capex guidance revisions, and margin trends.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "financial-ai",
+  "tags": [
+    "earnings-call",
+    "financial-sentiment",
+    "finnhub-style",
+    "tone-shift",
+    "market-intelligence"
+  ],
+  "inputs": {
+    "stock_ticker": {
+      "type": "string"
+    },
+    "fiscal_quarter": {
+      "type": "string"
+    },
+    "transcript_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "earnings_sentiment_id": {
+      "type": "string"
+    },
+    "stock_ticker": {
+      "type": "string"
+    },
+    "executive_sentiment_score": {
+      "type": "number"
+    },
+    "transcript_breakdown_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
